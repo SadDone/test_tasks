@@ -1,0 +1,209 @@
+Namespace {
+  name: '/',
+  server:
+   Server {
+     nsps: { '/': [Circular] },
+     parentNsps: Map {},
+     _path: '/socket.io',
+     _serveClient: true,
+     parser:
+      { protocol: 4,
+        types: [Array],
+        CONNECT: 0,
+        DISCONNECT: 1,
+        EVENT: 2,
+        ACK: 3,
+        ERROR: 4,
+        BINARY_EVENT: 5,
+        BINARY_ACK: 6,
+        Encoder: [Function: Encoder],
+        Decoder: [Function: Decoder] },
+     encoder: Encoder {},
+     _adapter: [Function: Adapter],
+     _origins: '*:*',
+     sockets: [Circular],
+     eio:
+      Server {
+        clients: [Object],
+        clientsCount: 1,
+        wsEngine: 'ws',
+        pingTimeout: 5000,
+        pingInterval: 25000,
+        upgradeTimeout: 10000,
+        maxHttpBufferSize: 100000000,
+        transports: [Array],
+        allowUpgrades: true,
+        allowRequest: [Function: bound ],
+        cookie: 'io',
+        cookiePath: '/',
+        cookieHttpOnly: true,
+        perMessageDeflate: [Object],
+        httpCompression: [Object],
+        initialPacket: [Array],
+        ws: [WebSocketServer],
+        _events: [Object],
+        _eventsCount: 1 },
+     httpServer:
+      Server {
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        _connections: 3,
+        _handle: [TCP],
+        _usingWorkers: false,
+        _workers: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        keepAliveTimeout: 5000,
+        maxHeadersCount: null,
+        headersTimeout: 40000,
+        _connectionKey: '6::::3000',
+        [Symbol(IncomingMessage)]: [Function],
+        [Symbol(ServerResponse)]: [Function],
+        [Symbol(asyncId)]: 5 },
+     engine:
+      Server {
+        clients: [Object],
+        clientsCount: 1,
+        wsEngine: 'ws',
+        pingTimeout: 5000,
+        pingInterval: 25000,
+        upgradeTimeout: 10000,
+        maxHttpBufferSize: 100000000,
+        transports: [Array],
+        allowUpgrades: true,
+        allowRequest: [Function: bound ],
+        cookie: 'io',
+        cookiePath: '/',
+        cookieHttpOnly: true,
+        perMessageDeflate: [Object],
+        httpCompression: [Object],
+        initialPacket: [Array],
+        ws: [WebSocketServer],
+        _events: [Object],
+        _eventsCount: 1 } },
+  sockets:
+   { Cxqfb8uP6Xd_LG3kAAAA:
+      Socket {
+        nsp: [Circular],
+        server: [Server],
+        adapter: [Adapter],
+        id: 'Cxqfb8uP6Xd_LG3kAAAA',
+        client: [Client],
+        conn: [Socket],
+        rooms: {},
+        acks: {},
+        connected: true,
+        disconnected: false,
+        handshake: [Object],
+        fns: [],
+        flags: {},
+        _rooms: [],
+        username: 'Anonymous' } },
+  connected:
+   { Cxqfb8uP6Xd_LG3kAAAA:
+      Socket {
+        nsp: [Circular],
+        server: [Server],
+        adapter: [Adapter],
+        id: 'Cxqfb8uP6Xd_LG3kAAAA',
+        client: [Client],
+        conn: [Socket],
+        rooms: {},
+        acks: {},
+        connected: true,
+        disconnected: false,
+        handshake: [Object],
+        fns: [],
+        flags: {},
+        _rooms: [],
+        username: 'Anonymous' } },
+  fns: [],
+  ids: 0,
+  rooms: [],
+  flags: {},
+  adapter:
+   Adapter {
+     nsp: [Circular],
+     rooms: { Cxqfb8uP6Xd_LG3kAAAA: [Room], allUser: [Room] },
+     sids: { Cxqfb8uP6Xd_LG3kAAAA: [Object] },
+     encoder: Encoder {} },
+  _events: [Object: null prototype] { connection: [Function] },
+  _eventsCount: 1 }
+
+
+
+
+
+nsps
+
+  { '/':
+   Namespace {
+     name: '/',
+     server:
+      Server {
+        nsps: [Circular],
+        parentNsps: Map {},
+        _path: '/socket.io',
+        _serveClient: true,
+        parser: [Object],
+        encoder: Encoder {},
+        _adapter: [Function: Adapter],
+        _origins: '*:*',
+        sockets: [Circular],
+        eio: [Server],
+        httpServer: [Server],
+        engine: [Server] },
+     sockets: { IczXql7LdUxO_zkXAAAA: [Socket] },
+     connected: { IczXql7LdUxO_zkXAAAA: [Socket] },
+     fns: [],
+     ids: 0,
+     rooms: [],
+     flags: {},
+     adapter:
+      Adapter {
+        nsp: [Circular],
+        rooms: [Object],
+        sids: [Object],
+        encoder: Encoder {} },
+     _events: [Object: null prototype] { connection: [Function] },
+     _eventsCount: 1 } }
+New user connected
+{ '/':
+   Namespace {
+     name: '/',
+     server:
+      Server {
+        nsps: [Circular],
+        parentNsps: Map {},
+        _path: '/socket.io',
+        _serveClient: true,
+        parser: [Object],
+        encoder: Encoder {},
+        _adapter: [Function: Adapter],
+        _origins: '*:*',
+        sockets: [Circular],
+        eio: [Server],
+        httpServer: [Server],
+        engine: [Server] },
+     sockets:
+      { IczXql7LdUxO_zkXAAAA: [Socket],
+        Q2u1tzR157QTordcAAAB: [Socket] },
+     connected:
+      { IczXql7LdUxO_zkXAAAA: [Socket],
+        Q2u1tzR157QTordcAAAB: [Socket] },
+     fns: [],
+     ids: 0,
+     rooms: [],
+     flags: {},
+     adapter:
+      Adapter {
+        nsp: [Circular],
+        rooms: [Object],
+        sids: [Object],
+        encoder: Encoder {} },
+     _events: [Object: null prototype] { connection: [Function] },
+     _eventsCount: 1 } }

@@ -1,0 +1,159 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+header {
+  /* height: 5%; */
+  text-align: center;
+}
+
+h1 {
+  font-family: "Comfortaa", sans-serif;
+  margin: 0px;
+}
+
+div#change_username,
+section#input_zone {
+  border: 5px outset #8258fa;
+}
+
+div#change_username {
+  height: 3%;
+  display: inline-block;
+  background-color: #bca9f5;
+}
+
+section#chatroom {
+  border: 5px inset #8258fa;
+  height: 85%;
+  overflow: auto;
+}
+
+section#input_zone {
+  height: 7%;
+  text-align: center;
+  background-color: #bca9f5;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+input#username {
+  font-family: "Comfortaa", sans-serif;
+}
+
+input#message {
+  display: inline-block;
+  width: 88%;
+  height: 70%;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 2vh;
+}
+
+button#send_message {
+  display: inline-block;
+  height: 70%;
+  width: 10%;
+}
+
+p.message {
+  margin: 0px;
+  width: 100%;
+  font-size: 2vh;
+  font-family: "Comfortaa", sans-serif;
+  padding: 0 1vh;
+}
+.mes span {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1vh;
+  font-family: "Comfortaa", sans-serif;
+  padding: 0 1vh;
+  text-align: center;
+}
+
+.mes {
+  height: 40px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mes:nth-child(even) {
+  background-color: #81daf5;
+}
+
+.mes:nth-child(odd) {
+  background-color: #81bef7;
+}
+
+#user:nth-child(even){
+  background-color: #81daf5;
+}
+#user:nth-child(odd){
+  background-color: #81bef7;
+}
+
+section #infOnline {
+  float: right;
+  border: 5px outset #29ca01;
+  background-color: #afc2d4;
+  /* padding: 5px 5px 5px 0; */
+  margin: 0 0 0 auto;
+  height: 100%;
+  width: 25%;
+} 
+#infOnline h2 {
+  height: 5%;
+  margin: 7% 0;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+}
+#userList {
+  border-top: 5px outset #29ca01;
+  height: 90%;
+}
+
+#user {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback {
+  height: 40px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+#userList p {
+  text-align: center;
+  margin:0 auto;
+}
+#userList button {
+  width: 100%;
+  margin-bottom: 5px;
+}

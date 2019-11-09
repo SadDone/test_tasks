@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>Converter</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Converter</h1>
+    </header>
+    <div class="from">
+      <select id="selectID1">
+        <option value="RUB">Рубль</option>
+
+        <option value="USD">Доллар</option>
+
+        <option value="EUR">Евро</option>
+      </select>
+      <input type="text" name="Введите число" id="inputFrom">
+    </div>
+
+    <div class="to">
+        <select id="selectID2">
+          <option value="USD" >Доллар</option>
+  
+          <option value="EUR">Евро</option>
+  
+          <option value="RUB">Рубль</option>
+        </select>
+        <input type="text" name="Введите число" id="inputTo">
+      </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
